@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		ul li{
+			list-style: none;
+			width: 345px;
+			padding: 10px 10px;
+			border: 1px solid #eee;
+		}
+		li a{
+			float: right;
+			font-size: 1.4rem;
+			cursor: pointer;
+			position: relative;
+			top: -3px;
+			font-weight: 900;
+			color: #999;
+		}
+		li a:hover{
+			color: #333;
+		}
+		input{
+			font-size: 1.3rem;
+			margin-bottom: 5px;
+			margin-left: 40px;
+			border: none;
+			outline: none; 
+			padding: 10px; 
+			box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+		}
+		button{
+			border: none;
+			padding: 10px;
+			font-size: 1.3rem;
+			background-color: #07c;
+			color: #fdfdfd;
+			cursor: pointer;
+		}
+		button:hover{
+			box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Ilyas Task</h1>
+	<h3>Cars</h3>
+	<input type="text" name="" placeholder="Search a Car....." onkeyup="app.searchCar(event)" style="width: 346px;">
+	<ul></ul>
+
+	<form onsubmit="app.new_car.pushName(event)">
+		<input type="text" placeholder="Enter Car Name...." onkeyup="app.new_car.getName(event)">
+		<button type="submit">Add Car</button>
+	</form>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
